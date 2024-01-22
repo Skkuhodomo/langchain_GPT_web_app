@@ -1,0 +1,16 @@
+python_dotenv
+openai
+langchain
+streamlit
+audio-recorder-streamlit
+gTTS
+pillow
+faiss-cpu
+tiktoken
+pypdf
+docx2txt
+unstructured
+python-pptx
+wikipedia
+pydub
+ffmpeg
