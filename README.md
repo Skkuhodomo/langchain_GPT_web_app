@@ -5,12 +5,12 @@ Examples:
 
 <img
   src="1.png"
-  width="500"
-  height="300"
+  width="1000"
+  height="600"
 />
 
 <img
   src="2.png"
-  width="500"
-  height="300"
+  width="1000"
+  height="600"
 />
