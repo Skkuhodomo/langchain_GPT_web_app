@@ -3,11 +3,7 @@
 Examples:
 
 
-<img
-  src="1.png"
-  width="1000"
-  height="600"
-/>
+![preview](1.png)
 
 <img
   src="2.png"
