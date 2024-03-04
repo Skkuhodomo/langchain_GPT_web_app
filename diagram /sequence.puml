@@ -1,8 +1,12 @@
  @startuml langchain-gpt-web-app 
 
-User --> Web 
-Web  --> Langchain 
-Langchain --> OpenAi 
+[User] -> [Web] 
+[Web]  -> [Langchain] 
+[Langchain] -> [OpenAI]
+[OpenAI] -> GPT3
+[OpenAI] -> GPT4
+[OpenAI] -> GPTVision
+[OpenAI] -> DallE 
 
 
 @enduml 
