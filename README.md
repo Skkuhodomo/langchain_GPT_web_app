@@ -23,9 +23,9 @@ Run
 ```
   streamlit run main.py
 ```
-Examples:
+Examples: 
 
+![preview](images/1.jpg)
+![preview](images/2.png)
 
-![preview](/images/1.png)
-![preview](/images/2.png)
 
