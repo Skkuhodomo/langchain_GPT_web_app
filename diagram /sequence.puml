@@ -1,0 +1,8 @@
+ @startuml langchain-gpt-web-app 
+
+User --> Web 
+Web  --> Langchain 
+Langchain --> OpenAi 
+
+
+@enduml 

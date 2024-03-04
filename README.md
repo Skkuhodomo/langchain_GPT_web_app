@@ -26,6 +26,6 @@ Run
 Examples:
 
 
-![preview](1.png)
-![preview](2.png)
+![preview](/images/1.png)
+![preview](/images/2.png)
 
