@@ -2,7 +2,6 @@
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
 !define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
 !define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
-LAYOUT_WITH_LEGEND()
 Person(user, "User", " ", $sprite="person")
 Container(embedding_model, "Embedding model", "OpenAI Embedding Model", "", $sprite="openai-icon") #LightGreen
 ContainerDb(faiss, "FAISS", "Vector Database", "", $sprite="facebook") #Grey 
