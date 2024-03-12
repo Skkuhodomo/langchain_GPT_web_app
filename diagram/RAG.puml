@@ -5,13 +5,14 @@ Container(embedding_model, "Embedding model", "OpenAI Embedding Model", "", $spr
 ContainerDb(faiss, "FAISS", "Vector Database", "", $sprite="facebook") #Grey 
 Container(data, "Proprietory data", "pdf,txt,pptx, docx, html", "", $sprite="&file,scale=5.0,color=White") #Grey
 Container(llm, "LLM", "OpenAI GPT models", "", $sprite="openai-icon") #LightGreen
+
 LAYOUT_WITH_LEGEND()
 Rel_R(user, embedding_model, "Question")
 Rel_D(data, embedding_model, "")
 Rel_R(embedding_model, faiss , "Store/Search")
 
 System_Boundary(prompt, "Prompt") {
-   "Original Question + Context"
+   Container(_prompt, "Original Question + Context","", "", $sprite="") 
 }
 
 Rel_D(user, prompt,"")
