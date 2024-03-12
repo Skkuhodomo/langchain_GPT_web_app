@@ -1,0 +1,26 @@
+@startuml RAG
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!include icons.puml
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define FONTAWESOME https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+LAYOUT_WITH_LEGEND()
+Person(user, "User", " ", $sprite="person")
+Container(embedding_model, "Embedding model", "OpenAI Embedding Model", "", $sprite="openai-icon") #LightGreen
+ContainerDb(faiss, "FAISS", "Vector Database", "", $sprite="facebook") #Grey 
+Container(data, "Proprietory data", "pdf,txt,pptx, docx, html", "", $sprite="&file,scale=5.0,color=White") #Grey
+Container(llm, "LLM", "OpenAI GPT models", "", $sprite="openai-icon") #LightGreen
+
+Rel_R(user, embedding_model, "Question")
+Rel_D(data, embedding_model, "")
+Rel_R(embedding_model, faiss , "Store/Search")
+
+System_Boundary(prompt, "Prompt") {
+   "Original Question + Context"
+}
+
+Rel_D(user, prompt,"")
+Rel_D(faiss, prompt,"")
+Rel_D(prompt, llm , "")
+Rel_U(llm, user, "Answer")
+
+@enduml

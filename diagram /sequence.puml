@@ -1,12 +1,20 @@
- @startuml langchain-gpt-web-app 
+@startuml RAG
+!include <C4/C4_Container>
+LAYOUT_LEFT_RIGHT()
 
-[User] -> [Web] 
-[Web]  -> [Langchain] 
-[Langchain] -> [OpenAI]
-[OpenAI] -> GPT3
-[OpenAI] -> GPT4
-[OpenAI] -> GPTVision
-[OpenAI] -> DallE 
+Person(user, "User")
+Container(web_app, "Web Application", "Python, Streamlit","Users are allowed to send documents.")
+
+System_Boundary(c2, "OpenAI") {
+    System(LLM_1,"GPT-3.5")
+    System(LLM_2,"GPT-4")
+    System(LLM_3, "DALL-E")
+}
 
 
-@enduml 
+Rel(user, web_app, "Requests", "localhot:8501")
+Rel(web_app, c2, "Call", "OPenAI API")
+Rel(c2, web_app, "Response")
+
+SHOW_LEGEND()
+@enduml
