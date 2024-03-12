@@ -2,10 +2,10 @@
 ### Before Get Started...
 My first langchain code is uploaded [here](https://github.com/Skkuhodomo/Chat-GPT-Anecdote-Maker)🦜🔗
 ## Flow
-##### Langchain
+#### overview
 ![class-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Skkuhodomo/langchain_GPT_web_app/main/diagram/sequence.puml) 
 
-##### RAG
+#### RAG
 ![class-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Skkuhodomo/langchain_GPT_web_app/main/diagram/RAG.puml) 
 
 
