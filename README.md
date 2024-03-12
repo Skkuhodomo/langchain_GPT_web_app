@@ -15,7 +15,7 @@ My first langchain code is uploaded [here](https://github.com/Skkuhodomo/Chat-GP
 
 Download Source code 
 ```
-  git clone https://github.com/Skkuhodomo/GPT_web_app.git
+  git clone https://github.com/Skkuhodomo/langchain_GPT_web_app.git
 ```
 </pre>
 
