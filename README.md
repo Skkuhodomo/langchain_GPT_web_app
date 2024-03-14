@@ -6,7 +6,7 @@ My first langchain code is uploaded [here](https://github.com/Skkuhodomo/Chat-GP
 ![class-diagram](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Skkuhodomo/langchain_GPT_web_app/main/diagram/sequence.puml) 
 
 #### RAG
-<img src="http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Skkuhodomo/langchain_GPT_web_app/main/diagram/RAG_langchain.puml" width="75%" height="75%">
+<img src="http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/Skkuhodomo/langchain_GPT_web_app/main/diagram/RAG_langchain.puml" width="50%" height="50%">
 
 
 
